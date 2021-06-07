@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="static/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet"> 
+	{% block head %}
+    
+    {% endblock%}
+</head>
+<body>
+    <div class='container_total_case'>
+        <div class="container_title_cases">
+            <h1 class="container_title_cases_h1">Total Cases : {{ confirmed}}</h1>
+        </div>
+        <div class='container_title_cases'>
+            <h1 class="container_title_cases_h1">Total Recovered : {{ recovered}}</h1>
+        </div>
+        <div class='container_title_cases'>
+            <h1 class="container_title_cases_h1">Total Deaths : {{ deaths}}</h1>
+        </div>
+    </div>
+    {% block body %}
+    
+     
+    {% endblock %}
+</body>
+</html>
