@@ -1,11 +1,9 @@
-from werkzeug.utils import redirect
 from market import app
 from flask import request,render_template
 from pip._vendor import requests
+
 @app.route('/homepage',methods=['POST','GET'])
 def homepage():
-	
-	
 	url = "https://covid-19-data.p.rapidapi.com/totals"
 
 	headers = {
@@ -20,7 +18,7 @@ def homepage():
 	deaths_total = data[0]['deaths']
 	if request.method=="POST":
 		country_name=request.form['code']
-	 
+	  	
 		url = "https://covid-19-data.p.rapidapi.com/country" 
 		querystring = {"name":country_name}
 
@@ -31,9 +29,7 @@ def homepage():
 
 		response = requests.request("GET", url, headers=headers, params=querystring)
 		
-		print(response)
 		data=response.json()
-		print(data)
 		country=data[0]['country']
 		confirmed= data[0]['confirmed']
 		recovered = data[0]['recovered']
@@ -41,8 +37,7 @@ def homepage():
 		deaths = data[0]['deaths']
 		 
 		 
-		return render_template('data.html',country=country,confirmed=confirmed,
-		recovered=recovered,critical=critical,deaths=deaths)
+		return render_template('data.html',country=country,confirmed=confirmed,recovered=recovered,critical=critical,deaths=deaths)
 	else:
 
 		return render_template('homepage.html',confirmed=confirmed_total,recovered=recovered_total,deaths=deaths_total)

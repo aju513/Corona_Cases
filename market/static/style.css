@@ -2,10 +2,14 @@
     margin:0;
      
 }
+.container_total_case{
+    display:flex;
+    justify-content: center;
+}
  
 .container_title_cases{
     background-color:#3498DB;
-    width:50%;
+    width:30%;
     height:70px;
     margin:10px;
     
@@ -15,6 +19,7 @@
     padding:20px;
     color:white;
     font-family: 'Quicksand', sans-serif;
+    font-size:25px;
 
 }
 .input_code{
@@ -23,7 +28,7 @@
     font-size: medium;
     font-family: 'Quicksand', sans-serif;
     position:relative;
-    left:20em;
+    left:25em;
     margin:2em;
     padding:5px;
     
@@ -36,5 +41,5 @@
     font-family: 'Quicksand', sans-serif;
     position:relative;
     top:50px;
-    right:60px;
+    left:6em;
 }
