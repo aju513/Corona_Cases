@@ -1,0 +1,40 @@
+*{
+    margin:0;
+     
+}
+ 
+.container_title_cases{
+    background-color:#3498DB;
+    width:50%;
+    height:70px;
+    margin:10px;
+    
+
+}
+.container_title_cases_h1{
+    padding:20px;
+    color:white;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.input_code{
+    width:30%;
+    height:30px;
+    font-size: medium;
+    font-family: 'Quicksand', sans-serif;
+    position:relative;
+    left:20em;
+    margin:2em;
+    padding:5px;
+    
+
+}
+.input_submit{
+    width:10%;
+    height:30px;
+    font-size: medium;
+    font-family: 'Quicksand', sans-serif;
+    position:relative;
+    top:50px;
+    right:60px;
+}

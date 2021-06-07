@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+{% block head%}
+<title>Homepage</title>
+{% endblock %}
+
+
+{% block body %}
+<div class="container_form">
+	<form method='POST' action='/homepage'>
+
+		<input name='code' type='text' value='italy' class='input_code'>
+		<input type='submit' value='sumbit' class='input_submit'>
+
+	</form>
+</div>
+{% endblock %}
