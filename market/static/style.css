@@ -2,7 +2,9 @@
     margin:0;
      
 }
- 
+.container_total_cases{
+    display: flex;
+}
 .container_title_cases{
     background-color:#3498DB;
     width:50%;
@@ -14,6 +16,7 @@
 .container_title_cases_h1{
     padding:20px;
     color:white;
+    font-size: 25px;
     font-family: 'Quicksand', sans-serif;
 
 }
@@ -37,4 +40,22 @@
     position:relative;
     top:50px;
     right:60px;
+}
+.country_boxes{
+    width:40%;
+    font-family: 'Quicksand',sans-serif;
+ 
+    background-color:#3498DB ;
+    margin: 5px;
+    padding:30px;
+    position:relative;
+    top:40px;
+
+
+    
+}
+.country_main_boxes{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }

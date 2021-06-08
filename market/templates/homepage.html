@@ -13,4 +13,13 @@
 
 	</form>
 </div>
+<div class=country_main_boxes>
+	{% for i in temp %}
+	<div  class=country_boxes>
+	<p>{{i['country']}}</p>
+	</div>
+	{% endfor%}
+	
+</div>
+
 {% endblock %}
